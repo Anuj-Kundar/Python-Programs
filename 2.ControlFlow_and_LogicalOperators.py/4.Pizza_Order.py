@@ -13,9 +13,19 @@ if(size=="S"):
         cost+=2
     if(extra_cheese=="Y"):
         cost+=1
-elif(size=="M" or size=="L"):
+    final_bill=cost
+if(size=="M"):
     cost+=20
     if(add_pepperoni=="Y"):
         cost+=3
     if(extra_cheese=="Y"):
         cost+=1
+    final_bill=cost
+if(size=="L"):
+    cost+=25
+    if(add_pepperoni=="Y"):
+        cost+=3
+    if(extra_cheese=="Y"):
+        cost+=1
+    final_bill=cost
+print(f"Your final bill is: ${final_bill}.")
