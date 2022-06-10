@@ -21,8 +21,8 @@ v=combined_name.count('v')
 e=combined_name.count('e')
 love =l+o+v+e
 
-true_score=str(true)+str(love)
-love_score=int(true_score)
+true_score = str(true)+str(love)
+love_score = int(true_score)
 
 
 if((love_score<10) and (love_score>90)):
